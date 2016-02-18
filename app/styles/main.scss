@@ -1,0 +1,189 @@
+// bower:scss
+// endbower
+
+$base-font-size:    14px;
+
+$white:             #FFFFFF;
+$gray01:            #FAFAFA;
+$gray02:            #F5F5F5;
+$gray03:            #CCCCCC;
+$gray04:            #7a7a7a;
+$gray05:            #5a5a5a;
+$gray06:            #333333;
+$black:             #000000;
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  font-size: $base-font-size;
+  line-height: 1.6;
+  color: $gray06;
+}
+
+.signature-container {
+  border-bottom: 1px solid $gray03;
+  margin-bottom: 40px;
+  padding: 40px;
+}
+
+// Helpers
+  // Alignment
+  .text-left { text-align: left; }
+  .text-right { text-align: right; }
+  .text-center { text-align: center; }
+
+  // Floats
+  .pull-left { float: left; }
+  .pull-right { float: right; }
+
+// Signature Styling
+.signature {
+  &.signature-01 {
+    font-size: 13px;
+    color: $gray04;
+
+    .name,
+    .position,
+    .phone,
+    .twitter,
+    .logo {
+      display: block;
+    }
+
+    .name {
+      font-weight: bold;
+      font-size: $base-font-size;
+      line-height: 1.3;
+      color: $gray06;
+    }
+
+    .logo {
+      margin: 10px 0;
+    }
+  }
+
+  &.signature-02 {
+    line-height: 1.3;
+    width: 240px;
+    margin: 0 auto;
+
+    .name,
+    .position,
+    .phone,
+    .twitter,
+    .logo {
+      display: block;
+    }
+
+    .name {
+      font-size: 1.8em;
+      border-bottom: 2px solid $gray06;
+      padding: 10px 0;
+      margin: 0 0 15px;
+    }
+
+    .position,
+    .phone,
+    .twitter {
+      text-align: left;
+    }
+
+    .avatar {
+      padding: 10px;
+      border: 2px solid $gray06;
+    }
+
+    span:last-child {
+      padding-bottom: 15px;
+      border-bottom: 2px solid $gray06;
+    }
+  }
+
+  &.signature-03 {
+    line-height: 1.3;
+    color: $gray04;
+
+    .name {
+      font-weight: bold;
+      color: $gray06;
+    }
+  }
+
+  &.signature-04 {
+
+    .name,
+    .website,
+    .phone,
+    .twitter {
+      display: block;
+    }
+
+    span {
+      padding-bottom: 1em;
+      &:first-child {
+        padding-bottom: 0;
+      }
+    }
+
+    .emoji {
+      margin-right: .5em;
+    }
+
+    .name {
+      font-weight: bold;
+    }
+
+    .position {
+      border-bottom: 1px solid $gray03;
+      color: $gray04;
+      display: inline-block;
+      padding-bottom: 1em;
+      margin-bottom: 1em;
+    }
+  }
+
+  &.signature-05 {
+    line-height: 1.2;
+
+    .name,
+    .position {
+      display: inline-block;
+      padding-bottom: 3px;
+    }
+
+    .position,
+    .phone,
+    .twitter,
+    .website {
+      font-size: 12px;
+    }
+
+    img {
+      margin-top: 5px;
+      border: 1px solid $gray06;
+    }
+    .right-col {
+      margin-left: 50px;
+    }
+  }
+}
+
+// Avatar
+.avatar {
+  border: 0;
+
+  // Avatar Size
+  &.avatar--sm {
+    width: 40px;
+  }
+  &.avatar--md {
+    width: 100px;
+  }
+  &.avatar--lg {
+    width: 200px;
+  }
+
+  //Avatar Shape
+  &.avatar--round {
+    border-radius: 100%;
+  }
+}
