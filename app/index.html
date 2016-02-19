@@ -14,90 +14,130 @@
     <!-- endbower -->
     <!-- endbuild -->
 
+    <link rel="stylesheet" href="/bower_components/flexboxgrid/css/flexboxgrid.min.css">
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
-    <link rel="stylesheet" href="/bower_components/flexboxgrid/css/flexboxgrid.min.css">
 
   </head>
   <body>
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+    <div class="container-fluid">
+      <div class="row row--no-gutter">
 
-    <div class="row">
-
-      <div class="col-xs-3">
-      </div>
-
-      <div class="col-xs-9">
-        <div class="signature-container">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <p>--</p>
-          <div class="signature signature-01">
-            <span class="name">Chris Vasquez</span>
-            <span class="position">Creative Director</span>
-            <img class="logo" src="https://media.giphy.com/media/GNLBQzhy2Y44U/giphy.gif" width="160" />
-            <span class="phone"><strong>Phone:</strong> 123.456.7890</span>
-            <span class="twitter"><strong>Twitter:</strong> @twitter</span>
-          </div>
+        <div class="col-xs-3 col-sm-2 col--no-gutter" id="signature-templates">
+          <h2>Template</h2>
         </div>
 
-        <div class="signature-container">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <p>--</p>
-          <div class="signature signature-02 text-center">
-            <img src="images/chrisv.jpg" class="avatar avatar--md avatar--round" />
-            <span class="name">Chris<br />
-              <strong>Vasquez</strong></span>
-            <span class="position">Creative Director</span>
-            <span class="phone">Phone: 123.456.7890</span>
-            <span class="twitter">Twitter: @twitter</span>
-          </div>
+        <div class="col-xs-3 col-sm-2 col--no-gutter" id="signature-settings">
+          <h2>Settings</h2>
+          <form>
+            <div class="textInputGroup">
+              <input type="text" id="firstName" required>
+              <label>First Name</label>
+            </div>
+
+            <div class="textInputGroup">
+              <input type="text" id="lastName" required>
+              <label>Last Name</label>
+            </div>
+
+            <div class="textInputGroup">
+              <input type="text" id="position" required>
+              <label>Position</label>
+            </div>
+
+            <div class="textInputGroup">
+              <input type="text" id="phone" required>
+              <label>Phone</label>
+            </div>
+
+            <div class="textInputGroup">
+              <input type="text" id="website" required>
+              <label>Website</label>
+            </div>
+
+            <div class="textInputGroup">
+              <input type="text" id="twitter" required>
+              <label>Twitter</label>
+            </div>
+          </form>
         </div>
 
-        <div class="signature-container">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <p>--</p>
-          <div class="signature signature-03">
-            <span class="name">Chris Vasquez</span> <span class="position">Creative Director</span><br/>
-            <span class="website">www.website.com</span> | <span class="city">Philadelphia</span><br/>
-            <span class="phone">123.456.7890</span> | <span class="twitter">@twitter</span>
-          </div>
-        </div>
+        <div class="col-xs scrolly col--no-gutter" id="signature-examples">
 
-        <div class="signature-container">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <p>--</p>
-          <div class="signature signature-04">
-            <span class="name">Chris Vasquez</span>
-            <span class="position">Creative Director</span>
-            <span class="website"><span class="emoji">💻</span> www.website.com</span>
-            <span class="phone"><span class="emoji">☎</span> 123.456.7890</span>
-            <span class="twitter"><span class="emoji">🐦</span> @twitter</span>
-          </div>
-        </div>
-
-        <div class="signature-container">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          <p>--</p>
-          <div class="signature signature-05">
-            <img src="images/chrisv.jpg" class="avatar avatar--sm avatar--round pull-left" />
-            <div class="right-col">
-              <span class="name">Chris Vasquez</span> <span class="position">Creative Director</span><br/>
-              <span class="phone">123.456.7890</span> <span class="twitter">@twitter</span><br/>
-              <span class="website">www.website.com</span>
+          <div class="signature-example">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>--</p>
+            <div class="signature signature-01">
+              <span class="name"><span class="firstName">Chris</span> <span class="lastName">Vasquez</span></span>
+              <span class="position">Creative Director</span>
+              <img class="logo" src="https://media.giphy.com/media/GNLBQzhy2Y44U/giphy.gif" width="160" />
+              <span class="phone"><strong>Phone:</strong> 123.456.7890</span>
+              <span class="twitter"><strong>Twitter:</strong> @twitter</span>
             </div>
           </div>
-        </div>
 
+          <div class="signature-example">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>--</p>
+            <div class="signature signature-02 text-center">
+              <img src="images/chrisv.jpg" class="avatar avatar--md avatar--round" />
+              <span class="name"><span class="firstName">Chris</span><br />
+                <span class="lastName">Vasquez</span></span>
+              <span class="position">Creative Director</span>
+              <span class="phone">Phone: 123.456.7890</span>
+              <span class="twitter">Twitter: @twitter</span>
+            </div>
+          </div>
+
+          <div class="signature-example">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>--</p>
+            <div class="signature signature-03">
+              <span class="name"><span class="firstName">Chris</span> <span class="lastName">Vasquez</span></span> <span class="position">Creative Director</span><br/>
+              <span class="website">www.website.com</span> | <span class="city">Philadelphia</span><br/>
+              <span class="phone">123.456.7890</span> | <span class="twitter">@twitter</span>
+            </div>
+          </div>
+
+          <div class="signature-example">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>--</p>
+            <div class="signature signature-04">
+              <span class="name"><span class="firstName">Chris</span> <span class="lastName">Vasquez</span></span>
+              <span class="position">Creative Director</span>
+              <span class="website"><span class="emoji">💻</span> www.website.com</span>
+              <span class="phone"><span class="emoji">☎</span> 123.456.7890</span>
+              <span class="twitter"><span class="emoji">🐦</span> @twitter</span>
+            </div>
+          </div>
+
+          <div class="signature-example">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>--</p>
+            <div class="signature signature-05">
+              <img src="images/chrisv.jpg" class="avatar avatar--sm avatar--round pull-left" />
+              <div class="right-col">
+                <span class="name"><span class="firstName">Chris</span> <span class="lastName">Vasquez</span></span> <span class="position">Creative Director</span><br/>
+                <span class="phone">123.456.7890</span> <span class="twitter">@twitter</span><br/>
+                <span class="website">www.website.com</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
+
     </div>
+
 
     <!-- Google Analytics: change UA-XXXXX-X to be your sites ID. -->
     <script>

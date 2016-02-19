@@ -1,0 +1,40 @@
+// Form Fiels
+.textInputGroup {
+  position:relative;
+
+  input[type="text"] {
+    font-size: $base-font-size;
+    padding: 20px 10px 10px;
+    box-sizing: border-box;
+    display:block;
+    width:100%;
+    border: 1px solid $gray03;
+
+    margin-bottom: 10px;
+
+    transition:0.2s ease all;
+
+    &:focus {
+      outline:none;
+      border-color: transparent;
+      box-shadow: rgba( 0 , 0 , 0, 0.2) 0 1px 1px;
+    }
+
+    &:focus ~ label,
+    &:valid ~ label {
+      top: 2px;
+      font-size:10px;
+    }
+  }
+
+  label {
+    color:#999;
+    font-size:14px;
+    font-weight:normal;
+    position:absolute;
+    pointer-events:none;
+    left:10px;
+    top:13px;
+    transition:0.2s ease all;
+  }
+}
